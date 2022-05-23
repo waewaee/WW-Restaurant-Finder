@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WWRestaurant</string>
+
+    <string name="shop_brief">Pizza is an Italian dish consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients.</string>
+
+    <string name="shop_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nunc felis. Pellentesque nisi sapien, lobortis in consectetur a, efficitur a purus. Curabitur bibendum elementum cursus. Nam eget elementum lorem. lobortis in consectetur.</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_medium_3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/margin_medium_2"
+        android:elevation="@dimen/margin_medium"
+        android:layout_margin="@dimen/margin_card_medium_2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_pink_A100">
+
+            <ImageView
+                android:id="@+id/iv_shop_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/shop"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"/>
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mexican Bite"
+                android:textSize="@dimen/text_regular_3x"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/iv_shop_icon"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_alignTop="@id/iv_shop_icon"/>
+
+            <TextView
+                android:id="@+id/tv_shop_rating_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:layout_below="@id/tv_shop_name"
+                android:layout_alignStart="@id/tv_shop_name"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <RatingBar
+                android:id="@+id/rb_shop_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.0"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_toEndOf="@id/tv_shop_rating_point"
+                android:layout_alignBottom="@id/tv_shop_rating_point"
+                android:layout_marginStart="@dimen/margin_medium"/>
+
+            <TextView
+                android:id="@+id/tv_people_who_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(100)"
+                android:layout_toEndOf="@id/rb_shop_rating"
+                android:layout_alignBottom="@id/tv_shop_rating_point"
+                android:layout_marginStart="@dimen/margin_medium"/>
+
+            <ImageView
+                android:id="@+id/iv_shop_location"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/location"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_medium_2"/>
+
+            <TextView
+                android:id="@+id/tv_shop_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_brief"
+                android:layout_below="@id/tv_shop_rating_point"
+                android:layout_toEndOf="@id/iv_shop_icon"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_xxlarge"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_shop_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_click"
+        android:text="For more"
+        android:textSize="@dimen/text_smaller"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:background="@drawable/btn_rounded_corner"
+        app:layout_anchor="@id/cardView"
+        app:layout_anchorGravity="bottom|center"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
